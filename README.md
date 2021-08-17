@@ -1,2 +1,2 @@
 # crawler
-POC for load Ulta website crawler
+POC of Ulta website crawler
