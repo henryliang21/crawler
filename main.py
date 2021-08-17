@@ -5,7 +5,7 @@ from playwright.async_api import async_playwright
 
 async def main():
     async with async_playwright() as p:
-        browser = await p.chromium.launch(headless=False, slow_mo=100)
+        browser = await p.chromium.launch() #(headless=False, slow_mo=100)
         page = await browser.new_page()
         #page.set_viewport_size({"width": 1440, "height": 960})
         searchTerm = urllib.parse.quote_plus("best lipstick")
